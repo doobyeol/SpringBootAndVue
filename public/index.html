@@ -8,10 +8,15 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+      <!-- localhost:5000 -->
+      <div id="app">
+        <router-view></router-view>
+      </div>
+
+      <!-- localhost:5000/home -->
+      <div>
+        <p>Main Component rendered</p>
+        <app-header></app-header>
+      </div>
   </body>
 </html>
